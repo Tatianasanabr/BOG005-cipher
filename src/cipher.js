@@ -1,7 +1,7 @@
 const cipher = {
 
   encode: (offset, Text1) => {
-    if (offset === 0) {
+    if (offset === 0 || offset === null) {
       throw new TypeError();
     }
 
@@ -27,7 +27,7 @@ const cipher = {
   },
 
   decode: (offset, Text1) => {
-    if (offset === 0) {
+    if (offset === null || offset === 0) {
       throw new TypeError();
     }
 
