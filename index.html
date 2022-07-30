@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BankAPP - FEDERAL RESERVE BANK of NEW YORK - Cipher</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="img/icon.png">
+  </head>
+  <body>
+    <section id="page1">
+      <div id="container">
+        <header>
+          <h1>BankApp</h1>
+          <h3>Sistema de cifrado del Banco de la Reserva Federal de Nueva York</h3>
+        </header>
+        <div class="figure">
+          <p><img src="img/Reserva-Federal.png" width="600px" height="250px"></p>
+          <p>Edificio histórico, 33 Liberty St, New York, NY 10045, Estados Unidos.</p>
+        <article>
+          <h4>Presione el botón comenzar para dar inicio al cifrado</h4>
+        </article>
+        <div id="showPage2">
+          <button type="button">Comenzar</button>
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <section id="page2" style="display:none">
+      <div id="containerPage2">
+        <header>
+         <h1>BankApp</h1>
+        </header>
+            <h4>En el primer recuadro digite el texto deseado, seleccion el nivel de seguridad que necesita implementar a su mensaje, según su necesidad presione el boton Cifrar o Descifrar, verifique su texto final 
+            en el recuadro inferior.</h4>
+        <main>
+          <div id="stepOne" autocomplete="off">
+            <textarea type="text" id="Message1" size="85" placeholder="ESCRIBA EL TEXTO A CIFRAR" spellcheck="false"
+              rows="4" cols="50"></textarea>
+          </div>
+          <h5>Nivel de seguridad a implementar</h5>
+          <div id="text2">
+            <input type="number" id="displacement" size="4"/>
+          </div>
+          <div id="button1">
+            <button type="button" id="Cipher" style="margin: 4px">Cifrar</button>
+            <button type="button" id="Decipher" style="margin: 4px">Descifrar</button>
+          </div>
+          <div id="text3">
+            <textarea type="text" id="message2" size="85" placeholder="SU TEXTO CIFRADO"></textarea>
+          </div>
+          <h4>Este es un servicio exclusivo de los empleados y clientes del Banco de la Reserva Federal,
+            al finalizar, asegúrese de limpiar todos los campos y cerrar la aplicación correctamente
+          </h4>
+          <div id="showPage1">
+            <button type="button" style="margin: 4px">Volver al inicio</button>
+          </div>
+          <button typr="button" id="clear" style="margin: 4px">Limpiar</button>
+        </main>  
+      </div>
+    </section>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
