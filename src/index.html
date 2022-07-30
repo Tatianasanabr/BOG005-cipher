@@ -29,17 +29,11 @@
     <section id="page2" style="display:none">
       <div id="containerPage2">
         <header>
-          <h1>BankApp</h1>
+         <h1>BankApp</h1>
         </header>
-        <figure>
-          <img src="img/info.png" id="info" width="42" height="42"/>
-          <figcaption>
-            En el primer recuadro, digite el texto deseado, seleccione con las flechas el nivel de seguridad que necesita
-            implementar a su mensaje, según su necesidad presione el boton Cifrar o Descifrar, verifique su texto final 
-            en el recuadro inferior.
-          </figcaption>
-        </figure>
-        <p><main>
+            <h4>En el primer recuadro digite el texto deseado, seleccion el nivel de seguridad que necesita implementar a su mensaje, según su necesidad presione el boton Cifrar o Descifrar, verifique su texto final 
+            en el recuadro inferior.</h4>
+        <main>
           <div id="stepOne" autocomplete="off">
             <textarea type="text" id="Message1" size="85" placeholder="ESCRIBA EL TEXTO A CIFRAR" spellcheck="false"
               rows="4" cols="50"></textarea>
@@ -49,9 +43,8 @@
             <input type="number" id="displacement" size="4"/>
           </div>
           <div id="button1">
-            <button type="button" id="Cipher">Cifrar</button>
-            <button type="button" id="Decipher">Descifrar</button>
-            <button typr="button" id="clear">Limpiar</button>
+            <button type="button" id="Cipher" style="margin: 4px">Cifrar</button>
+            <button type="button" id="Decipher" style="margin: 4px">Descifrar</button>
           </div>
           <div id="text3">
             <textarea type="text" id="message2" size="85" placeholder="SU TEXTO CIFRADO"></textarea>
@@ -60,10 +53,10 @@
             al finalizar, asegúrese de limpiar todos los campos y cerrar la aplicación correctamente
           </h4>
           <div id="showPage1">
-            <button type="button">Volver al inicio</button>
+            <button type="button" style="margin: 4px">Volver al inicio</button>
           </div>
-        </main>
-        </p>    
+          <button typr="button" id="clear" style="margin: 4px">Limpiar</button>
+        </main>  
       </div>
     </section>
     <script src="index.js" type="module"></script>

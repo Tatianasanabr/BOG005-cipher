@@ -11,17 +11,18 @@ const cipher = {
     for (let i = 0; i < Text1.length; i++) {
       let asciiCode = Text1.charCodeAt(i)
 
-      if (asciiCode >= 65 && asciiCode <= 91) {
+      if (asciiCode >= 65 && asciiCode <= 90) {
         let newPositionNumber = (asciiCode - 65 + offset) % 26 + 65;
         resultEncode += String.fromCharCode(newPositionNumber);
       }
-      else if (asciiCode >= 92 && asciiCode <= 118) {
-        let minLetter = (asciiCode - 92 + offset) % 26 + 92;
+      else if (asciiCode >= 97 && asciiCode <= 122) {
+        let minLetter = (asciiCode - 97 + offset) % 26 + 97;
         resultEncode += String.fromCharCode(minLetter);
       }
       else {
         resultEncode += Text1[i]
       }
+
     }
     return resultEncode;
   },

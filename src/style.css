@@ -115,7 +115,7 @@ button {
 #button1 {
     margin: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 body {
@@ -165,18 +165,6 @@ body {
 
 textarea {
     resize: none;
-}
-
-/*Texto invisible*/
-figcaption {
-    display: none;
-    transition: all .5s;
-}
-
-/*texto visible*/
-figure:hover > figcaption {
-    display:block;
-    transition: all .5s;
 }
 
 img {
